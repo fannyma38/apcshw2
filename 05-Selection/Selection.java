@@ -22,7 +22,7 @@ public class Selection {
 		D[EI] = L[i];
 		EI--;
 	    }
-	}
+	} 
 	D[SI] = pivot;
 	return D;
     }
