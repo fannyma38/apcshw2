@@ -26,7 +26,6 @@ public class Mergesort2{
     
     public static ArrayList<Integer> merge(int[] A, int[]B) {
        
-	ArrayList<Integer> omega = new ArrayList<Integer>();
 	
         int[]ret= new int[A.length() + B.length()];
 	int Bcoun= 0;
