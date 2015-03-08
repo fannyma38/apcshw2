@@ -33,6 +33,12 @@ public class Selection {
 	    if (low == k) {
 		return A[k];
 	    }
+<<<<<<< HEAD
+=======
+	} 
+	D[SI] = pivot;
+	return D;
+>>>>>>> c0ab4db3dc93f3c126e18021ebf78c0fbd3f3de0
     }
 	
 
