@@ -33,19 +33,12 @@ public class Selection {
 	    if (low == k) {
 		return A[k];
 	    }
-<<<<<<< HEAD
-=======
-	} 
-	D[SI] = pivot;
-	return D;
->>>>>>> c0ab4db3dc93f3c126e18021ebf78c0fbd3f3de0
     }
-	
-
 
     public static void main(String[] args) {
 	Selection s = new Selection();
 	int[] array = new int[]{1,2,7,4,3,5,3,5,4,4,3,9};
 	System.out.println(select(array, 5, 0, array.length - 1));
     }
+
 }
