@@ -25,10 +25,10 @@ public class Selection {
 		}
 	    }
 	    if (low > k) {
-		return select(A, k, 0, pivotIndex - 1);
+		return select(A, k, 0, low - 1);
 	    }
 	    if (low < k) {
-		return select(A, k, pivotIndex + 1, A.length - 1);
+		return select(A, k, low + 1, A.length - 1);
 	    }
 	    if (low == k) {
 		return A[k];
