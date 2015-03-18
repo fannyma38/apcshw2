@@ -62,6 +62,7 @@ public class LList {
 	ll.add("Fri");
 	ll.add("Wed");
 	System.out.println(ret.find(0));
+
     }
 
     
