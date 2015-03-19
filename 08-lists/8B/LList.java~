@@ -1,10 +1,13 @@
 public class LList {
     private Node l=null;
+    private Node dummy = new Node ("");
+    private int length=0;
 
     public void add(String s){
 	Node tmp = new Node(s);
 	tmp.setNext(l);
 	l = tmp;
+	length++;
     }
 
     public String toString(){
@@ -17,19 +20,13 @@ public class LList {
 	return s;
     }
 
-        public int find(String s){
-	Node temp = l;
-	int i = 0;
-	while (temp != null){
-	    if (temp.getData().equals(s)){
-		return i;
-	    }
+     public String get(int i){
+	Node temp = dummy;
+	for (int c = 0; c<i; c++){
 	    temp = temp.getNext();
-	    i++;
 	}
-	return -1;
+	return temp.getData();
     }
-
 
     public void add(int i, String s){
 	if (i==0){
@@ -43,8 +40,21 @@ public class LList {
 	    Node n = new Node(s);
 	    n.setNext(temp.getNext());
 	    temp.setNext(n);
+	    length++;
 	}
     }
+
+ public String remove(int i){
+	Node temp = dummy;
+	for (int x = 0; x < i; x++ ){
+	    temp = temp.getNext();
+	}
+	Node tmp = temp.getNext();
+	temp.setNext(tmp.getNext());
+	length--;
+	return temp.getData();
+    }
+
 
 
     public static void main(String[] args) {
@@ -52,6 +62,7 @@ public class LList {
 	ll.add("Fri");
 	ll.add("Wed");
 	System.out.println(ret.find(0));
+
     }
 
     
