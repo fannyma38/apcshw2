@@ -25,3 +25,5 @@ public class Node<E>{
 	return ""+data;
     }
 }
+
+ 
