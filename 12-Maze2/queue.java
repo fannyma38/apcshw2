@@ -25,7 +25,7 @@
       }
       public E front() {
   	return front.getNext().getData();
-      }
+     }
       public static void main(String[] args) {
   	queue<Integer> q = new queue<Integer>();
   	q.enqueue(10);
