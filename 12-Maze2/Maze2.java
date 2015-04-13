@@ -63,7 +63,7 @@ public class Maze2
     public Node newNode(int x, int y){
 	Node n = new Node(x,y);
 	return n;
-    }
+   }
 
     public void solve(int x, int y){
 	if (board[x][y]==wall ||
